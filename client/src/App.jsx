@@ -17,8 +17,8 @@ function App() {
 
   const fetchBotResponse = async () => {
     const { data } = await axios.post(
-      "https://analite-chatgpt.onrender.com",
-      //"http://localhost:5173",
+      //"https://analite-chatgpt.onrender.com",
+      "http://localhost:4000",
       { input },
       {
         headers: {

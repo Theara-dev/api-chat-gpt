@@ -11,12 +11,12 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "please visit https://analite-chatgpt.onrender.com",
+    message: "Welcome to chatbot from Analite, by Chat-GPT",
   });
 });
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPEN_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
