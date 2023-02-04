@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "please visit https://chatgpt-ai-app-od21.onrender.com",
+    message: "please visit https://analite-chatgpt.onrender.com",
   });
 });
 
