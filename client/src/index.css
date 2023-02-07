@@ -75,8 +75,9 @@
 
 .chatGPT-app {
   max-width: 1200px;
-  height: 100vh;
+  min-height: 60vh;
   margin: 0 auto;
+  overflow: hidden;
   padding: 0px 15px;
 }
 
@@ -119,7 +120,7 @@ footer {
   margin-right: -5px;
 }
 .chat-container {
-  height: calc(100vh - 80px);
+  height: calc(90vh - 80px);
   padding: 20px 0;
 }
 .layout {
