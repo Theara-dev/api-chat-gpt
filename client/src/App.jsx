@@ -16,7 +16,9 @@ function App() {
   }, [posts]);
 
   const fetchBotResponse = async () => {
+    console.log(input);
     const { data } = await axios.post(
+      //"http://localhost:4000/",
       "https://analite-chatgpt.onrender.com",
       { input },
       {
@@ -63,6 +65,7 @@ function App() {
       console.log(res.bot.trim());
       updatePosts(res.bot.trim(), true);
     });
+    console.log(input);
   };
 
   const updatePosts = (post, isBot, isLoading) => {
